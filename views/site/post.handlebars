@@ -1,0 +1,41 @@
+<section class="page-image page-image-contact md-padding">
+  <h1 class="text-white text-center">URANUSFLIX | Post</h1>
+</section>
+
+<section id="blog" class="md-padding">
+  <div class="container">
+    <div class="row">
+      <main id="main" class="col-md-8">
+
+        <div class="blog">
+          <div class="blog-img">
+            <img class="img-fluid" src="{{post.post_image}}" alt="" />
+          </div>
+          <div class="blog-content">
+            <ul class="blog-meta">
+              <li><i class="fas fa-user"></i>{{post.author.username}}</li>
+              <li><i class="fas fa-clock"></i>{{generateDate
+                post.date
+                "MM DD YYYY"
+                }}</li>
+            </ul>
+            <h3>{{post.title}}</h3>
+            <p>{{post.content}}</p>
+            <div class="mb-2"><a href="{{post.link}}">{{post.link_title}}</a></div>
+            <div class="mb-2"><a href="{{post.link2}}">{{post.link_title2}}</a></div>
+
+
+          </div>
+        </div>
+      </main>
+
+      <aside id="aside" class="col-md-4">
+
+				{{> site-sidebar}}
+        
+			</aside>
+
+    </div>
+
+  </div>
+</section>
